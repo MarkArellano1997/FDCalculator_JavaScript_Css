@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposito a Plazo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadData()">
+
+    <div class="main">
+
+        <h1>Deposito a plazos </h1>
+
+
+        <div>
+            <div class="row">
+                <p>Inversion total</p>
+
+                <span class="spanRow">S/.<input type="text" class="inputRow" id="inputInversion"></span>
+            </div>
+            <input type="range" name="" class="range" min="1000" max="10000" id="inputRangeInversion" onchange="changeRangeInputInversion(this)">
+        </div>
+
+        <div>
+            <div class="row">
+                <p>Tasa de interés (anual) </p>
+
+                <span class="spanRow"><input type="text" class="inputRow" id="inputTasa">%</span>
+            </div>
+
+            <input type="range" name="" min="1" max="15" class="range" id="inputRangeTasa" onchange="changeRangeInputTasa(this)">
+        </div>
+
+        <div>
+            <div class="row">
+                <p>Periodo ded tiempo (Años)</p>
+
+                <span  class="spanRow"><input type="text" class="inputRow" id="inputTime"></span>
+            </div>
+            <input type="range" min="1" max="11" name="" class="range" id="inputRangeTime" onchange="changeRangeInputTiempo(this)">
+        </div>
+
+        <button onclick="updateData()">Calcular Ahora</button>
+
+        <p>Monto invertido: <span id="spanMonto">-</span></p>
+        <p>Devoluciones estimadas: <span id="spanInterest">-</span></p>
+        <p>Valor total: <span id="spanTotal">-</span></p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

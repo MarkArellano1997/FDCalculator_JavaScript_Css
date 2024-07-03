@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(238, 239, 240);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.main{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.range{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.spanRow{
+    display: flex;
+    width:15%;
+    background-color: rgb(238, 239, 240);
+    flex-direction: row;
+}
+
+.inputRow{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: end;
+    outline: none;
+}
+
+button{
+    padding: 5px 0;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+}
